@@ -1,6 +1,4 @@
-## be_b_36\_\_s_application1
-
-Generated with ❤️ from [DhiWise](https://www.dhiwise.com)
+Insight lets you view all the latest news on trend and tech blog as well.
 
 ## Description
 
