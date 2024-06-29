@@ -22,7 +22,7 @@ app.use(cors({
 
 //to use the custom routes in the route folder we use app.use
 
-app.use("/test", async( req, res) => {
+app.use("/", async( req, res) => {
   res.status(200).json("Hello There")
 });
 
