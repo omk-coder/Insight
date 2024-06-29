@@ -36,16 +36,16 @@ app.use('/Cmb',CombineBlog)
 // app.use(ErrorHandler)
 
 
-//middleware and handling errors
-// app.use((err, req, res, next) => {
-//   const statusCode = err.statusCode || 500;
-//   const message = err.message || "Internal Server Error";
-//   return res.status(statusCode).json({
-//     success: false,
-//     error: message,
-//     statusCode,
-//   });
-// });
+// middleware and handling errors
+app.use((err, req, res, next) => {
+  const statusCode = err.statusCode || 500;
+  const message = err.message || "Internal Server Error";
+  return res.status(statusCode).json({
+    success: false,
+    error: message,
+    statusCode,
+  });
+});
 
 const Port = process.env.PORT || 4000;
 
