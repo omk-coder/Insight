@@ -1,0 +1,53 @@
+{
+  "name": "Insight",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^1.7.2",
+    "dotenv": "^16.0.1",
+    "html-react-parser": "^5.1.10",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.5.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "6.0.2",
+    "react-router-hash-link": "^2.4.3"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "10.4.2",
+    "postcss": "8.4.8",
+    "tailwindcss": "3.0.18",
+    "vite": "^4.1.1",
+    "vite-tsconfig-paths": "3.6.0"
+  }
+}
