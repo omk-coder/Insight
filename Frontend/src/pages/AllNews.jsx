@@ -19,7 +19,7 @@ const AllNews = () => {
       const res = await axios.get(`${serverUrl}/api/news`);
 
       setArticles(res.data);
-      console.log(res.data);
+      
     } catch (err) {
       console.log({ err: "Error fetching" });
     }
