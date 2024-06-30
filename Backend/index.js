@@ -23,19 +23,19 @@ app.options('*', cors({
   optionsSuccessStatus: 200
 }));
 
-
-//to use the custom routes in the route folder we use app.use
-
-app.use("/", async( req, res) => {
-  res.status(200).json("Hello There")
-});
-
 app.use('/blogs', BlogRoutes)
 app.use('/webdev', WebBlogs)
 app.use('/AI', AiBlogs)
 app.use('/BlockChain',Blockch)
 app.use('/api/news',NewsRoutes)
 app.use('/Cmb',CombineBlog)
+//to use the custom routes in the route folder we use app.use
+
+app.use("/", async( req, res) => {
+  res.status(200).json("Hello There")
+});
+
+
 // app.use(notFound)
 // app.use(ErrorHandler)
 
