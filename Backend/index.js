@@ -18,6 +18,10 @@ app.use(cors({
   optionsSuccessStatus: 200
 }));
 
+app.options('*', cors({
+  origin: process.env.CLIENT_URL,
+  optionsSuccessStatus: 200
+}));
 
 
 //to use the custom routes in the route folder we use app.use
