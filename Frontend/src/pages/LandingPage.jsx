@@ -17,7 +17,7 @@ export default function LandingPagePage() {
       const res = await axios.get(`${serverUrl}/blogs/latest`);
 
       setArticles(res.data);
-      console.log(res.data);
+      
     } catch (err) {
       console.log({ err: "Error fetching" });
     }
@@ -27,7 +27,7 @@ export default function LandingPagePage() {
       const res = await axios.get(`${serverUrl}/BlockChain/latest/four`);
 
       setBlock(res.data);
-      console.log(res.data);
+    
     } catch (err) {
       console.log({ err: "Error fetching" });
     }
@@ -38,7 +38,7 @@ export default function LandingPagePage() {
       const res = await axios.get(`${serverUrl}/webdev/latest/one`);
 
       setthreeAi(res.data);
-      console.log(res.data);
+      
     } catch (err) {
       console.log({ err: "Error fetching" });
     }
