@@ -21,7 +21,7 @@ export default function BlogDetailsPage() {
   const fetchArticle = async () => {
     try {
       const res = await axios.get(
-        `${serverUrl}/blogs/${encodeURIComponent(id)}`
+        `${serverUrl}/Cmb/${encodeURIComponent(id)}`
       );
       setBlogs(res.data);
       setLoading(false);
